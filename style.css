@@ -1,4 +1,13 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'Numeros';
+    src: url(DS-DIGII.TTF) format(truetype);
+}
+@font-face {
+    font-family: 'comic';
+    src: url(Hey\ Comic.ttf) format(truetype);
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -36,8 +45,59 @@ section#pomo{
     background-color: var(--cor0);
     margin: 20px;
 }
-#timer > p {
+#pomo > h1{
+    margin-top: 20px;
+    font-family: 'comic';
     font-size: 40px;
+}
+#timer{
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+}
+#timer > p {
+    font-size: 100px;
+    color: rgba(255, 255, 255, 0.755);
+    font-family: 'Numeros';
+}
+#reiniciar, #stop{
+   width: 22%;
+   height: 35px;
+   margin-top:10px;
+}
+#stop{
+    margin: 0px 10px 0px 0px;
+    
+    background-color: var(--cor3);
+    color: var(--cor4);
+    border-radius: 4px;
+    border: 1px solid var(--cor2);
+}
+#stop:hover{
+    background-color: var(--cor4);
+    color: var(--cor2);
+    border: 1px solid var(--cor4);
+    width: 25%;
+    height: 38px;
+    transition-timing-function: ease;
+    transition: .3s;
+}
+#reiniciar{
+    margin: 0px 0px 0px 15px;
+    background-color: var(--cor4);
+    color: black;
+    border-radius: 4px;
+    border: 1px solid var(--cor4);
+}
+#reiniciar:hover{
+    background-color: var(--cor4);
+    color: var(--cor3);
+    border: 1px solid var(--cor4);
+    width: 25%;
+    height: 38px;
+    transition: .3s;
 }
 section#taref{
     display: none;

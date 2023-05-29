@@ -1,0 +1,35 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor0:#6DA366;
+    --cor1:#8DC185;
+    --cor2:#E1483D;
+    --cor3:#EE6258;
+    --cor4:#F6F4F5;
+}
+body{
+    background-color: var(--cor1);
+}
+section#pomo{
+    display: inline-block;
+    width: 360px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+
+    background-color: var(--cor4);
+    color: #F21905;
+    border-radius: 20px;
+    text-align: center;
+}
+section#taref{
+    display: none;
+    background-color: ;
+    text-align: center;
+}

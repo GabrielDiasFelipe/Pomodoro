@@ -13,10 +13,10 @@
 body{
     background-color: var(--cor1);
 }
-section#pomo{
+main{
     display: inline-block;
-    width: 360px;
-    height: 400px;
+    width: 89%;
+    height: 95%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -25,8 +25,19 @@ section#pomo{
 
     background-color: var(--cor4);
     color: #F21905;
-    border-radius: 20px;
     text-align: center;
+}
+section#pomo{
+    display: inline-block; 
+    width: 90%;
+    height: 55%;
+    border-radius: 40px;
+    color: var(--cor4);
+    background-color: var(--cor0);
+    margin: 20px;
+}
+#timer > p {
+    font-size: 40px;
 }
 section#taref{
     display: none;

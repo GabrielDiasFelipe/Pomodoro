@@ -13,94 +13,202 @@
     padding: 0px;
 }
 :root{
-    --cor0:#6DA366;
-    --cor1:#8DC185;
-    --cor2:#E1483D;
-    --cor3:#EE6258;
-    --cor4:#F6F4F5;
+    --cor:#8A090E;
+    --transp:#ffffffa4;
+    
 }
 body{
-    background-color: var(--cor1);
+    background-color: var(--cor);
 }
 main{
     display: inline-block;
-    width: 89%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
 
+    background-image: linear-gradient(to right , var(--cor));
 
-    background-color: var(--cor4);
+
     color: #F21905;
     text-align: center;
 }
 section#pomo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%,-55%);
+
     display: inline-block; 
     width: 90%;
     height: 55%;
     border-radius: 40px;
-    color: var(--cor4);
-    background-color: var(--cor0);
+    color: white;
     margin: 20px;
 }
 #pomo > h1{
     margin-top: 20px;
-    font-family: 'comic';
-    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.776);
 }
-#timer{
+menu{
     position: absolute;
-    top: 26%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 60%;
+    top:10%;
+    left:92%;
+    transform: translate(-55%,-55%);
 }
+menu > button{
+    background-color: initial;
+    border: none;
+    color: var(--transp);
+    cursor: pointer;
+}
+menu > button:hover{
+    color:rgba(255, 255, 255, 0.878);
+    transition: .5s;
+}
+#menu{
+    display: ;
+    position: absolute;
+    top:11%;
+    left:90%;
+    transform: translate(-92%,-10%);
+    
+    width: 92%;
+    height: 290px;
+    
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px 40px;
+
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu > button{
+    position: absolute;
+    top:10%;
+    left:92%;
+    transform: translate(-50%,-50%);
+    
+    background-color: initial;
+    border: none;
+
+    color: black;
+    cursor: pointer;
+}
+#menu > button:hover{
+    color:var(--cor);
+    transition: 1s;
+}
+
+#menu > form{
+    width: 95%;
+    margin: 10px auto;
+    text-align: left;
+}
+#config > fieldset{
+    border-radius:7px;
+    width: 92%;
+  border: none;
+}
+#config > fieldset#duração{
+    float: left;
+    display: inline;
+    width: 50%;
+}
+#config > fieldset#tema{
+    display: inline;
+    margin-left:15px;
+    width: 30%;
+    height: 120px;
+}
+#config >fieldset >legend{
+    text-align: center;
+    color: var(--cor);
+}
+#config >fieldset > label{
+    margin-left: 10px;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+#config >fieldset > input{
+    text-align: center;
+    width: 40px;    
+    height: 20px;
+}
+#tempomo{
+    margin-top: 5px;
+}
+input#tempomo{
+    margin-left: 13px;
+}
+#templong{
+    margin-bottom: 10px;
+}
+
 #timer > p {
     font-size: 100px;
     color: rgba(255, 255, 255, 0.755);
     font-family: 'Numeros';
+    cursor: pointer;
 }
 #reiniciar, #stop{
    width: 22%;
    height: 35px;
    margin-top:10px;
+   cursor: pointer;
 }
 #stop{
-    margin: 0px 10px 0px 0px;
+    margin: 10px 10px 0px 0px;
     
-    background-color: var(--cor3);
-    color: var(--cor4);
+    background-color: rgba(255, 255, 255, 0.061);
+    color: white;
     border-radius: 4px;
-    border: 1px solid var(--cor2);
+    border: 1px solid var(--transp);
 }
 #stop:hover{
-    background-color: var(--cor4);
-    color: var(--cor2);
-    border: 1px solid var(--cor4);
+    background-color: rgba(255, 255, 255, 0.23);
     width: 25%;
     height: 38px;
     transition-timing-function: ease;
     transition: .3s;
 }
 #reiniciar{
-    margin: 0px 0px 0px 15px;
-    background-color: var(--cor4);
-    color: black;
+    margin: 10px 0px 0px 15px;
+    background-color: rgba(255, 255, 255, 0.1) ;
+    color:white;
     border-radius: 4px;
-    border: 1px solid var(--cor4);
+    border: 1px solid var(--transp);
 }
 #reiniciar:hover{
-    background-color: var(--cor4);
-    color: var(--cor3);
-    border: 1px solid var(--cor4);
+    background-color:rgba(255, 255, 255, 0.23);
     width: 25%;
     height: 38px;
     transition: .3s;
 }
+#taref{ 
+    width: 80%;
+    height: 50px;
+    margin-top: 30px;
+
+    border: 2px dashed rgba(255, 255, 255, 0.255);
+    background-color: var(--cor01);
+    color:white;
+    font-size: 14px;
+    cursor: pointer;
+}
+#taref:hover{
+    background-color: rgba(255, 255, 255, 0.107);
+    color:white;
+    transition: .5s;
+}
 section#taref{
     display: none;
-    background-color: ;
+    background-color:violet ;
     text-align: center;
 }
